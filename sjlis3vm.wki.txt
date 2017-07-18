@@ -1,0 +1,51 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   BAB II.docx
+#	new file:   BAB III.docx
+#	new file:   admin/edit_barang.php
+#	new file:   admin/edit_kategori.php
+#	new file:   admin/edit_pembeli.php
+#	new file:   admin/edit_provinsi.php
+#	new file:   admin/ganti_password.php
+#	new file:   admin/index_admin.php
+#	new file:   admin/info_pengiriman.php
+#	new file:   admin/konfirmasi_pembayaran.php
+#	new file:   admin/loginadmin.php
+#	new file:   admin/logout.php
+#	new file:   admin/menu_barang.php
+#	new file:   admin/menu_kategori.php
+#	new file:   admin/menu_pembeli.php
+#	new file:   admin/menu_provinsi.php
+#	new file:   admin/pemesanan_barang.php
+#	new file:   admin/tambah_barang.php
+#	new file:   admin/tambah_info_pengiriman.php
+#	new file:   admin/tambah_kategori.php
+#	new file:   admin/tambah_pembeli.php
+#	new file:   admin/tambah_provinsi.php
+#	new file:   koneksi.php
+#	new file:   login_form.php
+#	new file:   member/best_selling.php
+#	new file:   member/cara_beli.php
+#	new file:   member/chart.php
+#	new file:   member/daftar_member.php
+#	new file:   member/deskripsi.php
+#	new file:   member/kategori_sepatu_pria.php
+#	new file:   member/kategori_sepatu_wanita.php
+#	new file:   member/koneksi.php
+#	new file:   member/konfirmasi_belanja.php
+#	new file:   member/konfirmasi_pembayaran.php
+#	new file:   member/login_member.php
+#	new file:   member/logout.php
+#	new file:   member/profil.php
+#	new file:   member/tampil_pengiriman_barang.php
+#	new file:   member/tampilan_home.php
+#	new file:   member/transaksi.php
+#	new file:   tokosepatu (1).sql
+#
+
