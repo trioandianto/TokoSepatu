@@ -10,6 +10,51 @@ body,td,th {
 }
 </style>
 </head>
+<?php
+ //mengatasi error notice dan warning
+ //error ini biasa muncul jika dijalankan di localhost, jika online tidak ada masalah
+ error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+ 
+ $conn = new mysqli("localhost", "root", "", "tokosepatu");
+ if ($conn->connect_errno) {
+ echo die("Failed to connect to MySQL: " . $conn->connect_error);
+ }
+ 
+ if(isset($_POST['simpan'])){
+	 
+	 $filename = basename($_FILES["image"]["name"]);
+	 print_r($filename);
+	 move_uploaded_file($filetmp, $filepath);
+	 
+	 $location=$_FILES["image"]["name"];
+	 $kategori = mysqli_real_escape_string($conn, $_POST['kategori']);
+	 $nama_barang = mysqli_real_escape_string($conn, $_POST['nama_barang']);
+	 $deskripsi = mysqli_real_escape_string($conn, $_POST['deskripsi']);
+	 $harga_barang = mysqli_real_escape_string($conn, $_POST['harga_barang']);
+	 $id_barang = mysqli_real_escape_string($conn, $_POST['id_barang']);
+	 $berat_barang = mysqli_real_escape_string($conn, $_POST['berat_barang']);;
+	 $stock = mysqli_real_escape_string($conn, $_POST['stock']);
+	 
+	 
+	 $insert_barang = mysqli_query($conn, "INSERT INTO barang (id_barang, nama_barang, harga_jual, berat_barang, stok, deskripsi, gambar, id_kategori) VALUES ('$id_barang', '$nama_barang', $harga_barang, $berat_barang, $stock, '$deskripsi','','OK')");
+	 if($insert_barang===TRUE){
+		 echo "<script>alert('Data Berhasil Di Simpan')
+	 	location.replace('menu_barang.php')</script>";	 
+		 
+	 }
+	 else {
+		 echo "Gagal";
+		 echo $filename;
+	 }
+
+	
+
+	mysqli_close($conn);
+ 
+ }
+ ?>
+
+
 
 <body background="../../tugasakhir/S6zUsH8.jpg">
 <form id="form1" name="form1" method="post" action="">
@@ -18,7 +63,7 @@ body,td,th {
 <div align="center">
 <table width="1083" height="109" border="0" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="180" height="49"><div align="left"><strong><a href="index_admin.php">Beranda </a></strong></div></td>
+        <td width="180" height="49"><div align="left"><strong><a href="home.php">Beranda </a></strong></div></td>
         <td width="238"><div align="left"><strong><a href="ganti_password.php">Ganti Password</a></strong></div></td>
         <td width="295"><div align="left"><strong><a href="menu_provinsi.php">Menu Provinsi</a></strong></div></td>
         <td width="196"><div align="left"><strong><a href="menu_kategori.php">Menu Kategori</a></strong></div></td>
@@ -30,7 +75,7 @@ body,td,th {
         <td><div align="left"><strong><a href="konfirmasi_pembayaran.php">Konfirmasi Pembayaran </a></strong></div>
         <div align="left"></div></td>
         <td><div align="left"><strong><a href="info_pengiriman.php">Info Pengiriman </a></strong></div></td>
-        <td><div align="left"><strong><a href="logout">Logout</a></strong></div></td>
+        <td><div align="left"><strong><a href="logout.php">Logout</a></strong></div></td>
       </tr>
 </table>
   <p>&nbsp;</p>
@@ -60,6 +105,12 @@ body,td,th {
             <input type="text" name="harga_barang" id="harga_barang" /></td>
           </tr>
           <tr>
+            <td height="28" >Berat Barang (Kg)</td>
+            <td>:</td>
+            <td><label for="berat_barang"></label>
+            <input type="text" name="berat_barang" id="berat_barang" /></td>
+          </tr>
+          <tr>
             <td height="28">Stock</td>
             <td>:</td>
             <td><label for="stock"></label>
@@ -68,8 +119,8 @@ body,td,th {
           <tr>
             <td height="28">Gambar </td>
             <td>:</td>
-            <td><label for="gambar"></label>
-            <input type="file" name="gambar" id="gambar" /></td>
+            <td><label for="imageUpload"></label>
+            <input type="file" name="imageUpload" id="imageUpload"/></td>
           </tr>
           <tr>
             <td height="28">Deskripsi</td>

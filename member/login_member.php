@@ -39,7 +39,7 @@
   <p>&nbsp;</p>
   <table width="1098" border="0" align="center" cellpadding="0" cellspacing="0">
     <tr>
-      <td width="550"><strong><font size="+2"><a href="tampilan_home.php">HOME</a></font></strong>
+      <td width="550"><strong><font size="+2"><a href="../index.php">HOME</a></font></strong>
       <td width="548"><div align="right"><font size="+2"><a href="daftar_member.php">DAFTAR</a></font>
       </div>
     </tr>

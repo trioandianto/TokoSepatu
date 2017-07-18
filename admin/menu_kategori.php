@@ -18,7 +18,7 @@ body,td,th {
 <div align="center">
 <table width="1083" height="109" border="0" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="180" height="49"><div align="left"><strong><a href="index_admin.php">Beranda </a></strong></div></td>
+        <td width="180" height="49"><div align="left"><strong><a href="home.php">Beranda </a></strong></div></td>
         <td width="238"><div align="left"><strong><a href="ganti_password.php">Ganti Password</a></strong></div></td>
         <td width="295"><div align="left"><strong><a href="menu_provinsi.php">Menu Provinsi</a></strong></div></td>
         <td width="196"><div align="left"><strong><a href="menu_kategori.php">Menu Kategori</a></strong></div></td>
@@ -30,7 +30,7 @@ body,td,th {
         <td><div align="left"><strong><a href="konfirmasi_pembayaran.php">Konfirmasi Pembayaran </a></strong></div>
         <div align="left"></div></td>
         <td><div align="left"><strong><a href="info_pengiriman.php">Info Pengiriman </a></strong></div></td>
-        <td><div align="left"><strong><a href="logout">Logout</a></strong></div></td>
+        <td><div align="left"><strong><a href="logout.php">Logout</a></strong></div></td>
       </tr>
 </table>
   <p>&nbsp;</p>
@@ -40,6 +40,10 @@ body,td,th {
               <td width="348"><div align="right"><a href="tambah_kategori.php">Add data </a></div></td>
             </tr>
 </table>
+ <?php
+  $koneksi=mysql_connect("localhost","root","");
+  $database=mysql_select_db("tokosepatu",$koneksi);
+  ?>
 <p align="left">&nbsp;</p>
           <table width="909" border="1" cellspacing="0" cellpadding="0">
             <tr>
@@ -48,13 +52,31 @@ body,td,th {
               <td width="393"><div align="center">Nama Kategori</div>                <div align="center"></div></td>
               <td colspan="2"><div align="center">Aksi</div></td>
             </tr>
-            <tr>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td width="185"><div align="center"><a href="edit_kategori.php">Edit</a></div></td>
-              <td width="184"><div align="center">Delete</div></td>
-            </tr>
+            <?php 
+			$conn = new mysqli("localhost", "root", "", "tokosepatu");
+			 if ($conn->connect_errno) {
+			 echo die("Failed to connect to MySQL: " . $conn->connect_error);
+			 }
+			$query=mysqli_query($conn, "select * from kategori");
+  
+    $no= + 1;
+    while($baris=mysqli_fetch_array($query)){
+    
+      $mod=$no % 2;
+      
+
+?>
+    <tr bgcolor=<?php echo $color; ?>>
+     <td><div align="center"><?php echo $no; ?></td>
+     <td><div align="center"><?php echo $baris[0]; ?></td>
+     <td><div align="center"><?php echo $baris[1]; ?></td>
+     <td width="194"><div align="center"><a href="edit_kategori.php?kode_kategori=<? echo $baris[0];?>">Edit</a>
+     </div></td>
+    <td width="197"><div align="center"><a href="delete_kategori.php?kode_kategori=<? echo $baris[0];?>">Delete</a>
+    </div></td>
+    </tr>
+ <?php $no++; ?>
+     <?php } ?>
           </table>
 </body>
 </form>

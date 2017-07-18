@@ -18,7 +18,7 @@ body,td,th {
 <div align="center">
 <table width="1083" height="109" border="0" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="180" height="49"><div align="left"><strong><a href="index_admin.php">Beranda </a></strong></div></td>
+        <td width="180" height="49"><div align="left"><strong><a href="home.php">Beranda </a></strong></div></td>
         <td width="238"><div align="left"><strong><a href="ganti_password.php">Ganti Password</a></strong></div></td>
         <td width="295"><div align="left"><strong><a href="menu_provinsi.php">Menu Provinsi</a></strong></div></td>
         <td width="196"><div align="left"><strong><a href="menu_kategori.php">Menu Kategori</a></strong></div></td>
@@ -30,7 +30,7 @@ body,td,th {
         <td><div align="left"><strong><a href="konfirmasi_pembayaran.php">Konfirmasi Pembayaran </a></strong></div>
         <div align="left"></div></td>
         <td><div align="left"><strong><a href="info_pengiriman.php">Info Pengiriman </a></strong></div></td>
-        <td><div align="left"><strong><a href="logout">Logout</a></strong></div></td>
+        <td><div align="left"><strong><a href="logout.php">Logout</a></strong></div></td>
       </tr>
 </table>
   <p>&nbsp;</p>

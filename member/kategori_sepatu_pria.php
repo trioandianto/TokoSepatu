@@ -10,15 +10,15 @@ body,td,th {
 </style>
 </head>
 
-<body background="../../tugasakhir/images.jpg">
+<body>
 <form id="form1" name="form1" method="post" action="">
   <table width="1268" height="59" border="0" cellpadding="0" cellspacing="0">
     <tr>
       <td colspan="2"><div align="right"><strong><A href="tampilan_home.php">Home</a> | <a href="login_member.php">Login</a> | <a href="daftar_member.php">Daftar</a> | <a href="profil.php">Profil</a> | <a href="chart.php">Chart</a> | <a href="logoutmember.php">Logout</a></div></td>
     </tr>
     <tr>
-      <td width="333" height="73"><h1 align="center"><em><font color="#CC0000">Toko Sepatu Online </font></em></h1></td>
-      <td width="935"><label for="cari"></label>
+      <td width="1022" height="73"><h1 align="center"><em><font color="#CC0000"><marquee>Toko Sepatu Online </marquee></font></em></h1></td>
+      <td width="246"><label for="cari"></label>
         <div align="right">
           <input name="cari" type="text" id="cari" /> 
           <strong><em>
@@ -34,53 +34,79 @@ body,td,th {
       <td height="41"><div align="center"> </div>        <div align="center"></div></td>
     </tr>
   </table>
-  <table width="1268" height="414" border="0" cellpadding="0" cellspacing="0">
+  <table width="1268" height="1446" border="0" cellpadding="0" cellspacing="0">
     <tr>
-      <td width="222"><div align="center"><strong>Nama Sepatu </strong></div></td>
-      <td width="212"><div align="center"><strong>Nama Sepatu</strong></div></td>
-      <td width="212"><div align="center"><strong>Nama Sepatu</strong></div></td>
-      <td width="212"><div align="center"><strong>Nama Sepatu</strong></div></td>
-      <td width="410"><div align="center"><strong>Nama Sepatu </strong></div></td>
+      <td width="424" height="42"><div align="center"><strong>Stylish &amp; Comfortable Men Sneaker</strong></div></td>
+      <td width="425"><div align="center"><strong>Nama Sepatu</strong></div></td>
+      <td width="419"><div align="center"><strong>Nama Sepatu</strong></div></td>
+    </tr>
+    <tr>
+      <td height="164"><img src="../../tugasakhir/2017040611260629442.jpg" width="400" height="250" /></td>
+      <td><img src="../../tugasakhir/KS01_2.jpg" width="400" height="250" border="1" align="middle" /></td>
+      <td><img src="../../tugasakhir/KS01_4.jpg" width="400" height="250" border="1" align="middle" /></td>
+    </tr>
+    <tr>
+      <td height="37"><div align="center"><a href="deskripsi1.php">Detail </a></div></td>
+      <td><div align="center">Detail </div></td>
+      <td><div align="center">Detail </div></td>
+    </tr>
+    <tr>
+      <td height="46">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="55"><div align="center"><strong>Nama Sepatu </strong></div></td>
+      <td><div align="center"><strong>Nama Sepatu</strong></div></td>
+      <td><div align="center"><strong>Nama Sepatu</strong></div></td>
+    </tr>
+    <tr>
+      <td height="164"><img src="../../tugasakhir/KS01_8.jpg" width="400" height="250" border="1" /></td>
+      <td><img src="../../tugasakhir/KS01_3.jpg" width="400" height="250" border="1" /></td>
+      <td><img src="../../tugasakhir/KS01_6.jpg" width="400" height="250" border="1" /></td>
+    </tr>
+    <tr>
+      <td height="42"><div align="center">Detail </div></td>
+      <td><div align="center">Detail </div></td>
+      <td><div align="center">Detail </div></td>
+    </tr>
+    <tr>
+      <td height="42">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="50"><div align="center"><strong>Nama Sepatu </strong></div></td>
+      <td><div align="center"><strong>Nama Sepatu</strong></div></td>
+      <td><div align="center"><strong>Nama Sepatu</strong></div></td>
     </tr>
     <tr>
       <td height="164">&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><div align="center"><a href="deskripsi.php">Detail </a></div></td>
-      <td><div align="center">Detail </div></td>
-      <td><div align="center">Detail </div></td>
+      <td height="46"><div align="center">Detail </div></td>
       <td><div align="center">Detail </div></td>
       <td><div align="center">Detail </div></td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td height="44">&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><div align="center"><strong>Nama Sepatu </strong></div></td>
+      <td height="41"><div align="center"><strong>Nama Sepatu </strong></div></td>
       <td><div align="center"><strong>Nama Sepatu</strong></div></td>
       <td><div align="center"><strong>Nama Sepatu</strong></div></td>
-      <td><div align="center"><strong>Nama Sepatu</strong></div></td>
-      <td><div align="center"><strong>Nama Sepatu </strong></div></td>
     </tr>
     <tr>
       <td height="164">&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><div align="center">Detail </div></td>
-      <td><div align="center">Detail </div></td>
-      <td><div align="center">Detail </div></td>
+      <td height="43"><div align="center">Detail </div></td>
       <td><div align="center">Detail </div></td>
       <td><div align="center">Detail </div></td>
     </tr>
@@ -88,67 +114,9 @@ body,td,th {
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><div align="center"><strong>Nama Sepatu </strong></div></td>
-      <td><div align="center"><strong>Nama Sepatu</strong></div></td>
-      <td><div align="center"><strong>Nama Sepatu</strong></div></td>
-      <td><div align="center"><strong>Nama Sepatu</strong></div></td>
-      <td><div align="center"><strong>Nama Sepatu </strong></div></td>
-    </tr>
-    <tr>
-      <td height="164">&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><div align="center">Detail </div></td>
-      <td><div align="center">Detail </div></td>
-      <td><div align="center">Detail </div></td>
-      <td><div align="center">Detail </div></td>
-      <td><div align="center">Detail </div></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><div align="center"><strong>Nama Sepatu </strong></div></td>
-      <td><div align="center"><strong>Nama Sepatu</strong></div></td>
-      <td><div align="center"><strong>Nama Sepatu</strong></div></td>
-      <td><div align="center"><strong>Nama Sepatu</strong></div></td>
-      <td><div align="center"><strong>Nama Sepatu </strong></div></td>
-    </tr>
-    <tr>
-      <td height="164">&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td><div align="center">Detail </div></td>
-      <td><div align="center">Detail </div></td>
-      <td><div align="center">Detail </div></td>
-      <td><div align="center">Detail </div></td>
-      <td><div align="center">Detail </div></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td colspan="5"><div align="center"> 
+      <td colspan="3"><div align="center"> 
         <p>&nbsp;</p>
         <p><strong>&gt; &gt; &gt; &gt; &gt; NEXT </strong></p>
         <p>&nbsp;</p>

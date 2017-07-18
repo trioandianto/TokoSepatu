@@ -16,7 +16,7 @@ body,td,th {
     <tr>
       <td colspan="2"><font size="+2"><strong><marquee><font color="#CC0000">SELAMAT DATANG DI WEBSITE KAMI, SELAMAT BERBELANJA ...</marquee></font></strong></font></td>
     </tr>
-    <tr>
+    <tr> 	
       <td height="45" colspan="2"><div align="right"><strong><a href="tampilan_home.php">Home</a> | <a href="login_member.php">Login</a> | <a href="daftar_member.php">Daftar</a> | <a href="profil.php">Profil</a> | <a href="chart.php">Chart</a> | <a href="logoutmember.php">Logout</a></strong></div></td>
     </tr>
     <tr>
@@ -31,6 +31,7 @@ body,td,th {
       <td colspan="2"><table width="1081" border="0" cellpadding="0" cellspacing="0">
         <tr>
           <td width="1081"><h1 align="center">&nbsp;</h1>
+            <h1 align="center"><strong><img src="../../tugasakhir/1.jpg" width="1349" height="784" /></strong></h1>
             <h1 align="center"><strong>BEST SELLING PRODUCTS</strong></h1>
 <h4 align="center"><em>Temukan sepatu dan sneakers favorit dengan harga terbaik!</em></h4>
             <p align="center">&nbsp;</p>
@@ -40,7 +41,8 @@ body,td,th {
         </tr>
         <tr>
           <td><p>&nbsp;</p>
-            <p align="center"><strong><h1 align="center">MEN’S  COLLECTION</h1>
+            <p align="center"><img src="../../tugasakhir/2017040611260629442.jpg" width="1349" height="784" />            
+            <strong><h1 align="center">MEN’S  COLLECTION</h1>
             </strong>
             <h4 align="center"><em>Area khusus sepatu  pria</em>
               <strong>
@@ -52,7 +54,7 @@ body,td,th {
             <h4 align="center">&nbsp;</h4></td>
         </tr>
         <tr>
-          <td><strong><h1 align="center">&nbsp;</h1>
+          <td><strong><h1 align="center"><img src="../../tugasakhir/download (2).jpg" width="1350" height="362" /></h1>
             <h1 align="center">WOMEN’S COLLECTION</h1>
             </strong>
             <h4 align="center"><em>Area khusus sepatu wanita</em></h4>

@@ -9,6 +9,32 @@ body,td,th {
 }
 </style>
 </head>
+<?php
+$conn = new mysqli("localhost", "root", "", "tokosepatu");
+ if ($conn->connect_errno) {
+ echo die("Failed to connect to MySQL: " . $conn->connect_error);
+ }
+
+ $kodeProvinsi = $_GET[kode_provinsi];
+ if($_POST['simpan']){
+	$kd_provinsi = mysqli_real_escape_string($conn, $_POST['kode_provinsi']);
+ 	$nama = mysqli_real_escape_string($conn,$_POST['nama_provinsi']);
+ 	$ongkos = mysqli_real_escape_string($conn, $_POST['ongkos_kirim']);
+ 
+ $query = mysqli_query($conn,"UPDATE  provinsi SET  kode_provinsi =  '$kd_provinsi', nama_provinsi =  '$nama', biaya_kirim =  '$ongkos' WHERE  kode_provinsi =  '$kodeProvinsi'");
+ 	if ($query===TRUE){
+	 echo "<script>alert('Data Berhasil Di Edit')
+	 location.replace('menu_provinsi.php')</script>";
+ 	}
+ 	else {
+	  echo "<script>alert('Data Gagal Di Edit')
+	 location.replace('menu_provinsi.php')</script>";
+	 
+	 }
+ }
+	 	
+
+?>
 
 <body background="../../tugasakhir/S6zUsH8.jpg">
 <form id="form1" name="form1" method="post" action="">
@@ -17,7 +43,7 @@ body,td,th {
 <div align="center">
 <table width="1083" height="109" border="0" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="180" height="49"><div align="left"><strong><a href="index_admin.php">Beranda </a></strong></div></td>
+        <td width="180" height="49"><div align="left"><strong><a href="home.php">Beranda </a></strong></div></td>
         <td width="238"><div align="left"><strong><a href="ganti_password.php">Ganti Password</a></strong></div></td>
         <td width="295"><div align="left"><strong><a href="menu_provinsi.php">Menu Provinsi</a></strong></div></td>
         <td width="196"><div align="left"><strong><a href="menu_kategori.php">Menu Kategori</a></strong></div></td>
@@ -29,7 +55,7 @@ body,td,th {
         <td><div align="left"><strong><a href="konfirmasi_pembayaran.php">Konfirmasi Pembayaran </a></strong></div>
         <div align="left"></div></td>
         <td><div align="left"><strong><a href="info_pengiriman.php">Info Pengiriman </a></strong></div></td>
-        <td><div align="left"><strong><a href="logout">Logout</a></strong></div></td>
+        <td><div align="left"><strong><a href="logout.php">Logout</a></strong></div></td>
       </tr>
 </table>
   <p>&nbsp;</p>
